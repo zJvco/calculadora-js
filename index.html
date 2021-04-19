@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <div class="screen">
+            <span class="txtScreen"></span>
+        </div>
+        <div class="buttons">
+            <!-- Linha 1 -->
+            <button onclick="insertReset()">C</button>
+            <button onclick="insertOperator('%')">%</button>
+            <button onclick="insertOperator('/')">/</button>
+            <button onclick="insertOperator('*')">X</button>
+
+            <!-- Linha 2 -->
+            <button onclick="insertNumber('7')">7</button>
+            <button onclick="insertNumber('8')">8</button>
+            <button onclick="insertNumber('9')">9</button>
+            <button onclick="insertOperator('-')">-</button>
+
+            <!-- Linha 3 -->
+            <button onclick="insertNumber('4')">4</button>
+            <button onclick="insertNumber('5')">5</button>
+            <button onclick="insertNumber('6')">6</button>
+            <button onclick="insertOperator('+')">+</button>
+
+            <!-- Linha 4 -->
+            <button onclick="insertNumber('1')">1</button>
+            <button onclick="insertNumber('2')">2</button>
+            <button onclick="insertNumber('3')">3</button>
+            <button id="space-top" onclick="insertResult()">=</button>
+
+            <!-- Linha 5 -->            
+            <button id="space-bottom" onclick="insertNumber('0')">0</button>
+            <button onclick="insertNumber('.')">.</button>
+        </div>
+    </div>
+</body>
+</html>
